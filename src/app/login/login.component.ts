@@ -30,5 +30,8 @@ export class LoginComponent implements OnInit {
         this.contactForm.reset();
       }, 5000);
     }
+
+    console.log(form);
+
   }
 }

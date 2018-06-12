@@ -8,6 +8,7 @@
   <div>
     <label for="password">Password</label>
     <input id="password" name="pass" type="password" formControlName="pass">
+    <span *ngIf="contactForm.controls.pass.invalid && contactForm.controls.pass.touched">The password is too short</span>
   </div>
   <footer>
     <div>
