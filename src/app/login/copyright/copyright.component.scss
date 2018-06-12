@@ -1,0 +1,14 @@
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #acacac;
+  font-size: 13px;
+
+  a {
+    color: #acacac;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<app-logo></app-logo>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm)">
+  <div>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" formControlName="username">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input id="password" name="pass" type="password" formControlName="pass">
+  </div>
+  <footer>
+    <div>
+      <input type="submit" value="Отправить" [disabled]="contactForm.invalid">
+    </div>
+    <div>
+      <a href="#">Forgot password?</a>
+    </div>
+  </footer>
+</form>
+
+<app-copyright></app-copyright>
+
+<app-popup [isShow]="showModal" [login]="contactForm.value.username" [password]="contactForm.value.pass"></app-popup>
